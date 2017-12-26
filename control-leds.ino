@@ -68,7 +68,30 @@ void afiseazaHTML(){
       "<html>\
       <head>\
           <script src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\ integrity=\"sha256hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\ crossorigin=\"anonymous\"></script>\
-          <title>CONTROL BECULET</title>\
+          <title>CONTROL BECULETE</title>\
+          <style>\
+           button{\
+            border: none;\
+            color: white;\
+            padding: 100px;\
+            text-align: center;\
+            display: inline-block;\
+            font-size: 50px;\
+            border-radius: 12px;\
+            width: 100%;\
+            margin-bottom: 20px;\
+            margin-top: 10px;\
+           }\
+           button.off{\
+            background-color: #DD1C1A;\
+           }\
+           button.on{\
+            background-color: #4CAF50;\
+          }\
+           button:focus{\
+            background-color: grey;\
+           }\
+         </style>\
         </head>\
         <body>\
           <button onclick=\"$.get('/on')\">On</button>\
