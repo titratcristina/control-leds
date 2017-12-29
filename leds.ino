@@ -66,13 +66,13 @@ void ledOff() {
   }
 
 void ledsOn() {
-    for(var i=0; i<4; i++){
+    for(int i=0; i<4; i++){
         digitalWrite(ledPin[i], HIGH);
       }
   }
 
 void ledsOff() {
-    for(var i=0; i<4; i++){
+    for(int i=0; i<4; i++){
         digitalWrite(ledPin[i], LOW);
       }
   }
