@@ -102,14 +102,14 @@ void afiseazaHTML(){
                                 <button onclick=\"$.post('/on',{led:1})\" class='button-yellow'>yellow on</button>\
                                 <button onclick=\"$.post('/on',{led:2})\" class='button-red'>red on</button>\
                                 <button onclick=\"$.post('/on',{led:3})\" class='button-green'>green on</button>\
-                                <button onclick=\"$.get(/onall)\" class='button-all'>on all</button>\
+                                <button onclick=\"$.get('/allon')\" class='button-all'>on all</button>\
                             </div>\
                             <div class='col-6'>\
                                 <button onclick=\"$.post('/off',{bec:0})\" class='buttoff-green'>green off</button>\
                                 <button onclick=\"$.post('/off',{bec:1})\" class='buttoff-yellow'>yellow off</button>\
                                 <button onclick=\"$.post('/off',{bec:2})\" class='buttoff-red'>red off</button>\
                                 <button onclick=\"$.post('/off',{bec:3})\" class='buttoff-green'>green off</button>\
-                                <button onclick=\"$.get(/offall)\" class='buttoff-all'>off all</button>\
+                                <button onclick=\"$.get('/alloff')\" class='buttoff-all'>off all</button>\
                             </div>\
                             <input type='number' min=0 max=4 id='beculet'>\
                             <input type='range' min=0 max=256 id='intensitate' onchange=\"$.post('/pwm',{led:document.getElementById('beculet').value, intensitate: document.getElementById('intensitate').value})\">\
